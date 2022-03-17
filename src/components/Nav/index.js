@@ -1,5 +1,5 @@
 import React from "react";
-import photo from '../../assets/Header/header image final.jpg';
+import photo from '../../assets/images/Header/header image final.jpg';
 
 function Nav(){
 
@@ -17,10 +17,10 @@ function Nav(){
             <nav>
                 <ul>
                     <li>
-                        <a href="./index.html">About Me</a>
+                        <a href="#About">About Me</a>
                     </li>
                     <li>
-                        <a href="./contact.html">Contact Me</a>
+                        <a href="#Contact">Contact Me</a>
                     </li>
                 </ul>
             </nav>

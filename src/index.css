@@ -62,7 +62,7 @@ header a{
   font-size: x-large;
   border-bottom: 3px solid var(--header-txt);
 }
-main{
+.about-me{
 
   padding: 20px 50px 40px 50px;
   border: 10px solid var(--main-txt);
