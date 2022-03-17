@@ -1,7 +1,11 @@
 import React from "react";
 import photo from '../../assets/images/Header/header image final.jpg';
 
-function Nav(){
+function Nav(props){
+
+    const {contactSelected,
+           setContactSelected
+    }=props;
 
 
     return(
@@ -17,10 +21,16 @@ function Nav(){
             <nav>
                 <ul>
                     <li>
-                        <a href="#About">About Me</a>
+                        <a href="#About" onClick={() => setContactSelected(false)}>About Me</a>
                     </li>
                     <li>
-                        <a href="#Contact">Contact Me</a>
+                        <a href="#Contact" onClick={() => setContactSelected(true)}>Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="#Portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#Resume">Resume</a>
                     </li>
                 </ul>
             </nav>
