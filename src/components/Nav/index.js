@@ -1,40 +1,29 @@
 import React from "react";
-import photo from '../../assets/images/Header/header image final.jpg';
-
-function Nav(props){
-
-    const {contactSelected,
-           setContactSelected
-    }=props;
 
 
+function Nav({currentPage, handlePageChange}){
     return(
-        <header id="header">
-            <section className="header-info">
-                <img src={photo} alt="Headshot of Mark Miller."/>
-                <div className="general-info">
-                    <h1>Mark Miller:</h1>
-                    <br></br>
-                    <p>Web Developer</p>
-                </div>
-            </section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#About" onClick={() => setContactSelected(false)}>About Me</a>
-                    </li>
-                    <li>
-                        <a href="#Contact" onClick={() => setContactSelected(true)}>Contact Me</a>
-                    </li>
-                    <li>
-                        <a href="#Portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#Resume">Resume</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#About" 
+                       onClick={() =>handlePageChange('About')}
+                       className={currentPage === 'About' ? 'testtest' : "notest"}>About Me</a>
+                </li>
+                <li>
+                    <a href="#Contact" onClick={()=> handlePageChange('Contact')}>Contact Me</a>
+                </li>
+                <li>
+                    <a href="#Portfolio" onClick={() => handlePageChange('Projects')}>Portfolio</a>
+                </li>
+                <li>
+                    <a href="#Resume"
+                       onClick={()=>handlePageChange('Resume')}>
+                    Resume</a>
+                </li>
+            </ul>
+        </nav>
     );
 }
 
