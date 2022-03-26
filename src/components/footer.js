@@ -6,24 +6,26 @@ function Footer () {
 
     return( 
     <footer>
-        <div>
-            <div>
-                <a href="https://github.com/Mark-Miller78" target="_blank">
-                    <img
-                        src={github}
-                        alt= "github logo"
-                    />
-                </a>
-            </div>
-            <div>
-                <a href="https://www.linkedin.com/in/mark-miller78/" target="_blank">
-                    <img
-                        src={linkedin}
-                        alt= "linkedin logo"
-                        height="32px" 
-                        width="32px"
-                    />
-                </a>
+        <div className="container">
+            <div className="footer-icons row justify-content-center">
+                <div className="col-4">
+                    <a href="https://github.com/Mark-Miller78" target="_blank" rel="noreferrer">
+                        <img
+                            src={github}
+                            alt= "github logo"
+                            width={50}
+                        />
+                    </a>
+                </div>
+                <div className="col-4">
+                    <a href="https://www.linkedin.com/in/mark-miller78/" target="_blank" rel="noreferrer">
+                        <img
+                            src={linkedin}
+                            alt= "linkedin logo" 
+                            width={50}
+                        />
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

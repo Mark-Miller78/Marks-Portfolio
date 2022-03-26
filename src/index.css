@@ -43,7 +43,7 @@ header img{
 }
 header nav{
   align-self: flex-end;
-  /* flex: 1; */
+
 }
 header nav ul{
   display: flex;
@@ -54,7 +54,7 @@ header nav ul{
 header nav ul li{
   padding: 10px 20px;
 }
-header a{
+header a {
   text-decoration: none;
   color: var(--header-txt);
   font-weight: bold;
@@ -62,9 +62,18 @@ header a{
   font-size: x-large;
   border-bottom: 3px solid var(--header-txt);
 }
-.about-me,
-.contact{
 
+.active-tab, header a:hover{
+  background-color: var(--header-txt);
+  color: var(--header-background);
+  border-radius: .75em;
+  padding: 5px;
+}
+
+.about-me,
+.contact,
+.project-container,
+.resume{
   padding: 20px 50px 40px 50px;
   border: 10px solid var(--main-txt);
   background-color: var(--main-background);
@@ -74,7 +83,7 @@ header a{
   line-height: 1.5;
   font-size: 40px;
   margin: 5px auto 20px auto;
-  border-bottom: 5px solid;
+  border-bottom: 5px solid var(--header-txt);
   width: 50%;
   justify-self: center;
   color: var(--main-txt);
@@ -119,23 +128,94 @@ header a{
 .info-text p{
   font-size: 20px;
 }
-footer{
-  background-color: var(--header-background);
+.contact{
+  display: flex;
+  flex-direction: column;
+}
+
+/* .contact-info{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  height: 50vh;
+} */
+/* .contact-form{
+  flex:1 50%; 
+  padding-right: 15px;
+} */
+
+.contact-form label{
+ padding: 3px;
+ line-height: 1.8;
+ border-bottom: 3px solid var(--header-txt);
+ color:var(--main-txt);
+ font-size: 1.5rem;
+ font-weight: 500;
+}
+.contact-form input, .contact-form textarea{
+  display:block;
+  width: 100%;
+  padding: 5px 10px;
+  margin: 15px auto;
+  border: 3px solid var(--header-txt);
+  font-size: 13px;
+  background-color: var(--main-txt);
+  color: var(--header-txt);
+  border-radius:10px
+}
+
+.contact-form button{
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--header-background);
+  color: var(--header-txt);
+  margin: 10px auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 8px
+}
+
+.error-message{
+ line-height: 1.8;
+ font-size: 1.5rem;
+ font-weight: 500;
+}
+
+.download{
+  padding: 3px;
+  line-height: 1.8;
+  color:var(--main-txt);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.download a{
+  color: var(--header-txt);
+}
+
+.proficiencies{
+  padding: 3px;
+  line-height: 1.8;
+  color:var(--main-txt);
+  font-size: 2rem;
+  font-weight: 500;
+  border-bottom: 4px solid var(--header-txt);
+  text-align: center;
+}
+
+.proficiencies-list{
+  list-style: none;
+  color: var(--main-txt);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+footer{
+  background-color: var(--header-background);
   font-size: 30px;
   color: var(--header-txt);
 }
-footer p{
-  margin: 10px 5px 10px 10px;
-}
-footer a{
-  text-decoration: none;
-  color: var(--header-txt);
-  align-self: center;
-  margin: 10px 10px 10px 5px;
-}
+
 
 @media screen and (max-width: 980px){
   .my-info{

@@ -8,8 +8,8 @@ function About () {
 
     return (
         <section className="about-me">
-            <div className="section-title">
-                <h2>Get to Know Me!</h2>
+            <div>
+                <h2 className="section-title">Get to Know Me!</h2>
             </div>
             <div className="about-me-cards">
 

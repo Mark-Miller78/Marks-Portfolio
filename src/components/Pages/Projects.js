@@ -47,7 +47,7 @@ function Projects(){
     ];
 
     return (
-        <div>
+        <div className="project-container">
             <h2 className="section-title">Projects</h2>
             <section className="project-list container">
                 <div className="row">
@@ -55,7 +55,7 @@ function Projects(){
                     {projectInfo.map((project, index) => {
                         return (<div className="col-lg-4 col-md-6 col-sm-6" key={index}>
                             <div 
-                                className="card" 
+                                className={`card ${isHovering === index ? "cardHover" : ""}`}
                                 onMouseEnter={() => setIsHovering(index)} 
                                 onMouseLeave={() => setIsHovering(-1)}
                             >
@@ -65,11 +65,11 @@ function Projects(){
                                     alt="project screenshot"
                                 />
                             <div className="items row">
-                                    <a href={project.link} target="_blank" className="col-10">
+                                    <a href={project.link} target="_blank" rel="noreferrer" className="col-10">
                                         <h3 className="projectLinks">{project.name}</h3>
                                     </a>
-                                    <a href={project.gitHub} target="_blank" className="col-2">
-                                        <img className="logo" src={gitHub}/>
+                                    <a href={project.gitHub} target="_blank" rel="noreferrer" className="col-2">
+                                        <img className="logo" alt="Github logo" src={gitHub}/>
                                     </a>
                                     <p className="col-12">{project.description}</p>
                             </div>
