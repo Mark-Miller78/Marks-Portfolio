@@ -3,15 +3,19 @@
   --header-background: #7C8981;
   --main-background: #8C9CAA;
   --main-txt: #D8D5D2;
+  --hover-txt: #1b2025;
 }
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   font-family: Helvrtica, Arial, sans-serif;
 }
+
 header{
   background-color: var(--header-background);
   color: var(--header-txt);
@@ -21,45 +25,53 @@ header{
   padding: 20px 30px;
   width: 100%;
 }
+
 .header-info{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  font-size:25px;
+  font-size:1.5rem;
 }
+
 header img{
   border-radius: 50%;
   flex:0;
   
 }
+
 .general-info{
   flex:1;
   padding: 20px
 }
+
 .general-info p{
   Position: relative;
   left: 25px
 }
+
 header nav{
   align-self: flex-end;
 
 }
+
 header nav ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   list-style: none;
 }
+
 header nav ul li{
   padding: 10px 20px;
 }
+
 header a {
   text-decoration: none;
   color: var(--header-txt);
   font-weight: bold;
   line-height: 1.4;
-  font-size: x-large;
+  font-size: 1.5rem;
   border-bottom: 3px solid var(--header-txt);
 }
 
@@ -78,6 +90,7 @@ header a {
   border: 10px solid var(--main-txt);
   background-color: var(--main-background);
 }
+
 .section-title{
   text-align: center;
   line-height: 1.5;
@@ -88,12 +101,14 @@ header a {
   justify-self: center;
   color: var(--main-txt);
 }
+
 .about-me-cards{
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 auto;
 }
+
 .my-info{
   flex: 1;
   display: flex;
@@ -104,6 +119,7 @@ header a {
   border: 5px solid var(--main-txt);
   background-color: var(--header-txt);
 }
+
 .my-info img{
   width:100%;
   height: 33vw;
@@ -111,12 +127,14 @@ header a {
   border-bottom: 5px solid var(--main-txt);
   border-radius: 5px 5px 0 0;
 }
+
 .info-text{
   margin: 5px;
   padding: 10px 15px;
   color: var(--main-txt);
   flex: 1;
 }
+
 .info-text h3{
   text-align: center;
   font-size: 25px;
@@ -125,24 +143,69 @@ header a {
   margin: 10px auto;
   padding-bottom: 15px;
 }
+
 .info-text p{
   font-size: 20px;
 }
+
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--main-txt);
+  border: 3px solid white;
+  
+  margin: 10px 20px;
+  position: relative;
+  justify-content: space-around;
+}
+
+.items{
+  position: absolute;
+  color: var(--hover-txt);
+  width: 100%;
+  
+}
+
+.items a{
+  text-decoration: none;
+}
+
+.projectLinks{
+  align-self: center;
+  font-size: 2em;
+  color: var(--hover-txt);
+  font-weight: 900;
+}
+
+.logo{
+ width: 100%;
+}
+
+.projectImg{
+  border-radius: .25rem;
+  height: 22vw;
+  width: 100%;
+  z-index: 1;
+}
+
+.hover{
+  border-radius: .25rem;
+  height: 22vw;
+  width: 100%;
+  z-index: 0;
+  opacity: 50%;
+}
+
+.cardHover{
+  box-shadow: 10px 5px rgba(0,0,0,0.70);
+}
+
 .contact{
   display: flex;
   flex-direction: column;
 }
-
-/* .contact-info{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 50vh;
-} */
-/* .contact-form{
-  flex:1 50%; 
-  padding-right: 15px;
-} */
 
 .contact-form label{
  padding: 3px;
@@ -152,6 +215,7 @@ header a {
  font-size: 1.5rem;
  font-weight: 500;
 }
+
 .contact-form input, .contact-form textarea{
   display:block;
   width: 100%;
@@ -189,6 +253,7 @@ header a {
   font-weight: 500;
   text-align: center;
 }
+
 .download a{
   color: var(--header-txt);
 }
@@ -216,10 +281,32 @@ footer{
   color: var(--header-txt);
 }
 
+.footer-icons{
+  text-align: center;
+}
+
+@media screen and (max-width: 1067px) {
+  header{
+    padding: 10px;
+  }
+  header a{
+    font-size: 1.3rem;
+  }
+  .projectLinks{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
 
 @media screen and (max-width: 980px){
   .my-info{
       flex: 1 33%;
+  }
+  .header-info{
+    font-size: 1.2rem;
+  }
+  header a{
+    font-size: 1rem;
   }
 }
 
@@ -239,18 +326,32 @@ footer{
   .general-info p{
       align-self: center;
       flex: 1;
-      text-align: center;
       font-size: 30px;
   }
   header nav{
       align-self: center;
   }
+  .projectLinks{
+    font-size: 1rem;
+  }
+  .description{
+    font-size: .75rem;
+  }
+  
 }
+
+@media screen and (max-width:653px){
+  header a {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width:639px){
   .general-info{
       flex-direction: column;
   }
 }
+
 @media screen and (max-width: 472px){
   header img{
       height:75px;
@@ -271,23 +372,36 @@ footer{
   footer{
       font-size: 15px;
   }
-
 }
+
+@media screen and (max-width: 487px) {
+  .projectLinks{
+    font-size: .75rem;
+  }
+  .description{
+    font-size: .5rem;
+  }
+  header a{
+    font-size: .75rem;
+  }
+}
+
 @media screen and (max-width: 426px){
   .section-title{
       font-size: 25px;
       width:90%;
   }
-
+  header a {
+    font-size: .60rem;
+  }
+  
 }
+
 @media screen and (max-width: 380px){
   header nav ul li{
       padding: 6px 5px;
   }
-
   .general-info{
       padding: 5px;
   }
-
-
 }

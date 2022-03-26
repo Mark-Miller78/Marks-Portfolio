@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import '../../assets/css/projects.css';
 import gitHub from "../../assets/images/logos/GitHub-logo.png";
 
 
@@ -50,10 +49,10 @@ function Projects(){
         <div className="project-container">
             <h2 className="section-title">Projects</h2>
             <section className="project-list container">
-                <div className="row">
+                <div className="row justify-content-center">
 
                     {projectInfo.map((project, index) => {
-                        return (<div className="col-lg-4 col-md-6 col-sm-6" key={index}>
+                        return (<div className="col-lg-4 col-md-6 col-sm-6 col-9" key={index}>
                             <div 
                                 className={`card ${isHovering === index ? "cardHover" : ""}`}
                                 onMouseEnter={() => setIsHovering(index)} 
@@ -65,13 +64,13 @@ function Projects(){
                                     alt="project screenshot"
                                 />
                             <div className="items row">
-                                    <a href={project.link} target="_blank" rel="noreferrer" className="col-10">
+                                    <a href={project.link} target="_blank" rel="noreferrer" className="col-8 col-lg-9 col-md-9 col-sm-8">
                                         <h3 className="projectLinks">{project.name}</h3>
                                     </a>
-                                    <a href={project.gitHub} target="_blank" rel="noreferrer" className="col-2">
+                                    <a href={project.gitHub} target="_blank" rel="noreferrer" className="col-4 col-lg-3 col-md-3 col-sm-4">
                                         <img className="logo" alt="Github logo" src={gitHub}/>
                                     </a>
-                                    <p className="col-12">{project.description}</p>
+                                    <p className="description col-12">{project.description}</p>
                             </div>
                             </div>
                         </div>)
