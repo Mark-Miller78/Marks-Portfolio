@@ -1,57 +1,82 @@
 import React, {useState} from "react";
 import '../../assets/css/projects.css';
-import gameLounge from "../../assets/images/Projects/game-lounge.png";
-import parksAndBrews from "../../assets/images/Projects/parks-and-brews.png";
 import gitHub from "../../assets/images/logos/GitHub-logo.png";
 
 
 function Projects(){
 
-    const [hover, setHover] = useState(false);
+    const [isHovering, setIsHovering] = useState(-1);
 
-    const handleHoverState = () =>{
-        return setHover(!hover);
-    }
+    const projectInfo = [
+        {
+            name: 'Game Lounge',
+            link: 'https://the-3-codeteers.herokuapp.com/',
+            gitHub: 'https://github.com/afebre1027/the-3-codeteers',
+            description:'MySQL, Handlebars, Express.js'
+        },
+        {
+            name: 'Parks And Brews',
+            link: 'https://amuldrow.github.io/group-project/',
+            gitHub: 'https://github.com/amuldrow/group-project',
+            description: 'APIs, Javascript, Foundation'
+        },
+        {
+            name: 'Budget Tracker',
+            link: 'https://arcane-forest-95788.herokuapp.com/',
+            gitHub: 'https://github.com/Mark-Miller78/Budget-Tracker-PWA',
+            description: 'PWA, Service Worker, Heroku'
+        },
+        {
+            name: 'Note Taker',
+            link: 'https://boiling-everglades-66556.herokuapp.com/',
+            gitHub: 'https://github.com/Mark-Miller78/Note-Taker',
+            description: 'Express.js, Node.js'
+        },
+        {
+            name: 'Work Day Scheduler',
+            link: 'https://mark-miller78.github.io/Work-Day-Scheduler/',
+            gitHub: 'https://github.com/Mark-Miller78/Work-Day-Scheduler',
+            description: 'JQuery, Moment.js, Bootstrap'
+        },
+        {
+            name: 'Social Network API',
+            link: 'https://github.com/Mark-Miller78/Social-Network-API',
+            gitHub: 'https://github.com/Mark-Miller78/Social-Network-API',
+            description: 'MongoDB, Mongooose, Express.js'
+        }
+    ];
 
     return (
         <div>
             <h2 className="section-title">Projects</h2>
             <section className="project-list container">
                 <div className="row">
-                    <div className="col-lg-4 col-md-6 col-sm-6" >
-                        <div className="card" onMouseEnter={e=>(handleHoverState())} onMouseLeave={e=>(handleHoverState())}>
-                            <img  className={`projectImg ${hover ? "hover" : ""}`} src={gameLounge} alt="Homepage for Game Lounge"/>
-                           <div className="items">
-                                <h3 className="projectLinks">Game Lounge</h3>
-                                <img className="logo" src={gitHub}/>
-                           </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="card">
-                            <a href="https://amuldrow.github.io/group-project/" target="_blank" rel="noopener noreferrer">
-                                <img className="projectImg" src={parksAndBrews} alt="Landing page for Parks and Brews"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="card">
-                            <img className="projectImg" src="./Assets/images/placeholder2.jpg" alt="Elephants covered in clay gathering in a herd"/>
-                            <h3>Coming Soon!</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="card">
-                            <img src="./Assets/images/placeholder3.jpg" alt="Snowy clearing on the edge of a forest"/>
-                            <h3>Coming Soon!</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="card">
-                            <img src="./Assets/images/placeholder4.jpg" alt="Five Zebras grazing on the savanna"/>
-                            <h3>Coming Soon!</h3>
-                        </div>
-                    </div>
+
+                    {projectInfo.map((project, index) => {
+                        return (<div className="col-lg-4 col-md-6 col-sm-6" key={index}>
+                            <div 
+                                className="card" 
+                                onMouseEnter={() => setIsHovering(index)} 
+                                onMouseLeave={() => setIsHovering(-1)}
+                            >
+                                <img  
+                                    className={`projectImg ${isHovering === index ? "hover" : ""}`} 
+                                    src={require(`../../assets/images/Projects/${project.name}.png`)} 
+                                    alt="project screenshot"
+                                />
+                            <div className="items row">
+                                    <a href={project.link} target="_blank" className="col-10">
+                                        <h3 className="projectLinks">{project.name}</h3>
+                                    </a>
+                                    <a href={project.gitHub} target="_blank" className="col-2">
+                                        <img className="logo" src={gitHub}/>
+                                    </a>
+                                    <p className="col-12">{project.description}</p>
+                            </div>
+                            </div>
+                        </div>)
+                    })}
+
                 </div>
             </section>
         </div>

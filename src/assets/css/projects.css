@@ -52,6 +52,10 @@ main{
     width: 100%;
     align-content: center;
 }
+
+.items a{
+    text-decoration: none;
+}
 .projectLinks{
     align-self: center;
     font-size: 2em;
@@ -59,8 +63,8 @@ main{
     font-weight: 900;
 }
 .logo{
-   height: 15%;
-   width: 15%;
+   height: 100%;
+   width: 100%;
    align-self: center;
 }
 .projectImg{
