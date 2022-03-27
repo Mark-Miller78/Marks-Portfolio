@@ -3,9 +3,10 @@ import gitHub from "../../assets/images/logos/GitHub-logo.png";
 
 
 function Projects(){
-
+    //sets value if hovering over project
     const [isHovering, setIsHovering] = useState(-1);
 
+    //project array
     const projectInfo = [
         {
             name: 'Game Lounge',
@@ -50,11 +51,13 @@ function Projects(){
             <h2 className="section-title">Projects</h2>
             <section className="project-list container">
                 <div className="row justify-content-center">
-
+                    {/* maps over project array to create card for each, also passing in index in array */}
                     {projectInfo.map((project, index) => {
                         return (<div className="col-lg-4 col-md-6 col-sm-6 col-9" key={index}>
                             <div 
+                                //changes class of card that is hovered over
                                 className={`card ${isHovering === index ? "cardHover" : ""}`}
+                                //on hover, changes isHovering to index value
                                 onMouseEnter={() => setIsHovering(index)} 
                                 onMouseLeave={() => setIsHovering(-1)}
                             >

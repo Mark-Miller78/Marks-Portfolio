@@ -7,8 +7,10 @@ import Resume from "./Pages/Resume";
 import Projects from "./Pages/Projects";
 
 function PortfolioContainer() {
+    //sets value of current page
     const [currentPage, setCurrentPage] = useState('About');
 
+    //returns component based on selected value in nav component
     const renderPage = () =>{
         if(currentPage === 'About'){
             return <About/>;
@@ -29,6 +31,7 @@ function PortfolioContainer() {
     return (
         
         <div>
+            {/* passes currentPage and handlePageChange function to header component */}
             <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
             <main>
             {renderPage()}

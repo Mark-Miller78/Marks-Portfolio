@@ -1,6 +1,6 @@
 import React from "react";
 
-
+//destructured props from header component
 function Nav({currentPage, handlePageChange}){
     return(
 
@@ -8,7 +8,9 @@ function Nav({currentPage, handlePageChange}){
             <ul>
                 <li>
                     <a href="#About" 
+                        // changes value of currentPage
                        onClick={() =>handlePageChange('About')}
+                    //    highlights the current page being viewed
                        className={currentPage === 'About' ? 'active-tab' : ""}
                        >About Me</a>
                 </li>
