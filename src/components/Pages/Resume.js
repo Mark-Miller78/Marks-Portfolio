@@ -1,4 +1,5 @@
 import React from "react";
+import resume from '../../assets/resume/Technical-Resume.doc';
 
 function Resume() {
 
@@ -7,7 +8,7 @@ function Resume() {
             <div>
                 <h1 className="section-title">Resume</h1>
                 <p className="download">Download my resume {' '}  
-                    <a href="/resume/Technical-Resume.doc" download>HERE!</a>
+                    <a href={resume} download>HERE!</a>
                 </p>
             </div>
             <br></br>
