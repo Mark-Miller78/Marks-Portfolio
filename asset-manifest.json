@@ -1,26 +1,23 @@
 {
   "files": {
-    "main.css": "/Marks-Portfolio/static/css/main.594a2df0.css",
-    "main.js": "/Marks-Portfolio/static/js/main.c64568e8.js",
+    "main.css": "/Marks-Portfolio/static/css/main.f4bf004e.css",
+    "main.js": "/Marks-Portfolio/static/js/main.629cc442.js",
     "static/js/787.128fc6e9.chunk.js": "/Marks-Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/Parks And Brews.png": "/Marks-Portfolio/static/media/Parks And Brews.768c4cfc69ac4c6b9683.png",
     "static/media/Game Lounge.png": "/Marks-Portfolio/static/media/Game Lounge.d61b5539ba8e839ef46b.png",
-    "static/media/where-have-i-been.jpg": "/Marks-Portfolio/static/media/where-have-i-been.77f3a9388ab0709dba1d.jpg",
     "static/media/Work Day Scheduler.png": "/Marks-Portfolio/static/media/Work Day Scheduler.b3a0122426720d79b423.png",
     "static/media/Budget Tracker.png": "/Marks-Portfolio/static/media/Budget Tracker.b95e5295c035761542fb.png",
-    "static/media/where.im.going.jpg": "/Marks-Portfolio/static/media/where.im.going.ebe7ae612cc10db0a4ca.jpg",
     "static/media/Note Taker.png": "/Marks-Portfolio/static/media/Note Taker.251d7663e57d105a1722.png",
-    "static/media/Who-am-I.jpg": "/Marks-Portfolio/static/media/Who-am-I.3a900fd276fce640a282.jpg",
-    "static/media/Technical-Resume.doc": "/Marks-Portfolio/static/media/Technical-Resume.a06db0ec2fd2bab3ef4d.doc",
-    "static/media/header image final.jpg": "/Marks-Portfolio/static/media/header image final.f3c4d993c9d08abc9f60.jpg",
+    "static/media/aboutimg.jpg": "/Marks-Portfolio/static/media/aboutimg.e0c75353d9f84da55786.jpg",
+    "static/media/Technical-Resume.doc": "/Marks-Portfolio/static/media/Technical-Resume.74e24fee14e56810ccd5.doc",
     "static/media/Social Network API.png": "/Marks-Portfolio/static/media/Social Network API.e232b4ee942731aab7f7.png",
     "index.html": "/Marks-Portfolio/index.html",
-    "main.594a2df0.css.map": "/Marks-Portfolio/static/css/main.594a2df0.css.map",
-    "main.c64568e8.js.map": "/Marks-Portfolio/static/js/main.c64568e8.js.map",
+    "main.f4bf004e.css.map": "/Marks-Portfolio/static/css/main.f4bf004e.css.map",
+    "main.629cc442.js.map": "/Marks-Portfolio/static/js/main.629cc442.js.map",
     "787.128fc6e9.chunk.js.map": "/Marks-Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.594a2df0.css",
-    "static/js/main.c64568e8.js"
+    "static/css/main.f4bf004e.css",
+    "static/js/main.629cc442.js"
   ]
 }
