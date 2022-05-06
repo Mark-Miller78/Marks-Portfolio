@@ -29,25 +29,8 @@ header{
 .header-info{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   font-size:1.5rem;
-}
-
-header img{
-  border-radius: 50%;
-  flex:0;
-  
-}
-
-.general-info{
-  flex:1;
-  padding: 20px
-}
-
-.general-info p{
-  Position: relative;
-  left: 25px
 }
 
 header nav{
@@ -60,6 +43,7 @@ header nav ul{
   flex-wrap: wrap;
   justify-content: flex-end;
   list-style: none;
+  padding-left: 0em;
 }
 
 header nav ul li{
@@ -91,6 +75,10 @@ header a {
   background-color: var(--main-background);
 }
 
+.about-me{
+  position: relative;
+}
+
 .section-title{
   text-align: center;
   line-height: 1.5;
@@ -102,50 +90,18 @@ header a {
   color: var(--main-txt);
 }
 
-.about-me-cards{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
+#aboutimg{
+  border-radius: 50%;
+  width: 23em;
+  float: left;
+  margin: 2em 2em 1em 1em;
+  shape-outside: circle(50%);
 }
 
-.my-info{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  margin: 10px 10px;
-  border-radius: 10px;
-  border: 5px solid var(--main-txt);
-  background-color: var(--header-txt);
-}
-
-.my-info img{
-  width:100%;
-  height: 33vw;
-  object-fit: cover;
-  border-bottom: 5px solid var(--main-txt);
-  border-radius: 5px 5px 0 0;
-}
-
-.info-text{
-  margin: 5px;
-  padding: 10px 15px;
-  color: var(--main-txt);
-  flex: 1;
-}
-
-.info-text h3{
-  text-align: center;
-  font-size: 25px;
-  border-bottom: 5px solid var(--main-txt);
-  width: 50%;
-  margin: 10px auto;
-  padding-bottom: 15px;
-}
-
-.info-text p{
-  font-size: 20px;
+.aboutText{
+  font-size: 1.7rem;
+  color: var(--header-txt);
+  font-weight: 475;
 }
 
 .card{
@@ -205,6 +161,11 @@ header a {
 .contact{
   display: flex;
   flex-direction: column;
+}
+
+.contact-info{
+  width: 50%;
+  margin: 0 auto;
 }
 
 .contact-form label{
@@ -299,34 +260,34 @@ footer{
 }
 
 @media screen and (max-width: 980px){
-  .my-info{
-      flex: 1 33%;
-  }
   .header-info{
     font-size: 1.2rem;
   }
   header a{
     font-size: 1rem;
   }
+  #aboutimg{
+    width: 20em;
+    margin: 1.5em 1.5em .5em .5em;
+  }
+  .aboutText{
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 768px){
-  .my-info{
-      flex:1 50%;
-  }
-  .section-title{
+  .section-title, .contact-info{
       width: 80%;
   }
   header{
       flex-direction: column;
   }
-  .general-info{
-      display: flex;
+  #aboutimg{
+    width: 18em;
+    margin: 0.5em 1.5em .30em 0em;
   }
-  .general-info p{
-      align-self: center;
-      flex: 1;
-      font-size: 30px;
+  .aboutText{
+    font-size: 1.25em;
   }
   header nav{
       align-self: center;
@@ -337,7 +298,6 @@ footer{
   .description{
     font-size: .75rem;
   }
-  
 }
 
 @media screen and (max-width:653px){
@@ -347,8 +307,8 @@ footer{
 }
 
 @media screen and (max-width:639px){
-  .general-info{
-      flex-direction: column;
+  #aboutimg{
+    width: 15em;
   }
 }
 
@@ -356,18 +316,15 @@ footer{
   header img{
       height:75px;
   }
-  .general-info{
-      flex-direction: row;
+  #aboutimg{
+    width: 10em;
+  }
+  .aboutText{
+    font-size: 1em;
   }
   .general-info h1{
       font-size: 25px;
       align-self: center;
-  }
-  .general-info p{
-      font-size: 20px
-  }
-  .info-text p {
-      font-size:14px;
   }
   footer{
       font-size: 15px;
@@ -401,7 +358,10 @@ footer{
   header nav ul li{
       padding: 6px 5px;
   }
-  .general-info{
-      padding: 5px;
+  .aboutText{
+    font-size: .75em;
+  }
+  #aboutimg{
+    width: 7em;
   }
 }
