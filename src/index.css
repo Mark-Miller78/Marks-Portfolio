@@ -104,30 +104,6 @@ header a {
   font-weight: 475;
 }
 
-.card{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  background-color: var(--main-txt);
-  border: 3px solid white;
-  
-  margin: 10px 20px;
-  position: relative;
-  justify-content: space-around;
-}
-
-.items{
-  position: absolute;
-  color: var(--hover-txt);
-  width: 100%;
-  
-}
-
-.items a{
-  text-decoration: none;
-}
-
 .card-body a{
   padding: 5px;
 }
@@ -145,8 +121,9 @@ header a {
 
 /* Style your items */
 .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-  background: grey;
+  background: var(--header-background);
   margin-bottom: 30px;
+  text-align: center;
 }
 
 
@@ -154,15 +131,12 @@ header a {
   border-radius: .25rem;
   height: 22vw;
   width: 100%;
-  z-index: 1;
 }
 
 .hover{
   border-radius: .25rem;
   height: 22vw;
   width: 100%;
-  z-index: 0;
-  opacity: 50%;
 }
 
 .cardHover{
