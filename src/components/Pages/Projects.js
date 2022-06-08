@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Masonry from "react-masonry-css";
 
 
 
@@ -13,14 +14,14 @@ function Projects(){
             description:'A relaxed place to chat with friends and play some games',
             link: 'https://the-3-codeteers.herokuapp.com/',
             gitHub: 'https://github.com/afebre1027/the-3-codeteers',
-            tech:'MySQL, Handlebars, Express.js'
+            tech:'My Roles: MySQL, Handlebars, Express.js'
         },
         {
             name: 'Parks And Brews',
             description:'An app for finding a place to relax after a hard day hiking',
             link: 'https://amuldrow.github.io/group-project/',
             gitHub: 'https://github.com/amuldrow/group-project',
-            tech: 'APIs, Javascript, Foundation'
+            tech: 'My Roles: APIs, Javascript, Foundation, Mapbox'
         },
         {
             name: 'Budget Tracker',
@@ -52,27 +53,37 @@ function Projects(){
         }
     ];
 
+    const breakpointColumnsObj = {
+        default: 3,
+        768: 2,
+        500: 1,
+    }
+
     return (
         <div className="project-container">
             <h2 className="section-title">Projects</h2>
             <section className="project-list container">
-                <div className="row justify-content-center">
+                <Masonry
+                    breakpointCols={breakpointColumnsObj}
+                    className="my-masonry-grid"
+                    columnClassName="my-masonry-grid_column">
                     {/* maps over project array to create card for each, also passing in index in array */}
                     {projectInfo.map((project, index) => {
-                        return (<div className="col-lg-4 col-md-6 col-sm-6 col-9" key={index}>
+                        return (
                             <div 
                                 //changes class of card that is hovered over
                                 className={`card ${isHovering === index ? "cardHover" : ""}`}
                                 //on hover, changes isHovering to index value
                                 onMouseEnter={() => setIsHovering(index)} 
                                 onMouseLeave={() => setIsHovering(-1)}
+                                key={index}
                             >
                                 <img  
                                     className={`projectImg ${isHovering === index ? "hover" : ""}`} 
                                     src={require(`../../assets/images/Projects/${project.name}.png`)} 
                                     alt="project screenshot"
                                 />
-                            <div className="card-body">    
+                            <div className={`card-body ${isHovering === index ? "d-inline" : "d-none"}`}>    
                                 <h2 className="card-title">{project.name}</h2>
                                 <p className="description">{project.description}</p>
                                 <p className="description col-12">{project.tech}</p>
@@ -86,10 +97,10 @@ function Projects(){
                                 </div>
                             </div>
                             </div>
-                        </div>)
+                        )
                     })}
 
-                </div>
+                </Masonry>
             </section>
         </div>
     );

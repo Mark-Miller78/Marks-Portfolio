@@ -128,16 +128,27 @@ header a {
   text-decoration: none;
 }
 
-.projectLinks{
-  align-self: center;
-  font-size: 2em;
-  color: var(--hover-txt);
-  font-weight: 900;
+.card-body a{
+  padding: 5px;
+}
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
 }
 
-.logo{
- width: 100%;
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
 }
+
 
 .projectImg{
   border-radius: .25rem;
