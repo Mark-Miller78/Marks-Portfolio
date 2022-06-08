@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import gitHub from "../../assets/images/logos/GitHub-logo.png";
+
 
 
 function Projects(){
@@ -10,39 +10,45 @@ function Projects(){
     const projectInfo = [
         {
             name: 'Game Lounge',
+            description:'A relaxed place to chat with friends and play some games',
             link: 'https://the-3-codeteers.herokuapp.com/',
             gitHub: 'https://github.com/afebre1027/the-3-codeteers',
-            description:'MySQL, Handlebars, Express.js'
+            tech:'MySQL, Handlebars, Express.js'
         },
         {
             name: 'Parks And Brews',
+            description:'An app for finding a place to relax after a hard day hiking',
             link: 'https://amuldrow.github.io/group-project/',
             gitHub: 'https://github.com/amuldrow/group-project',
-            description: 'APIs, Javascript, Foundation'
+            tech: 'APIs, Javascript, Foundation'
         },
         {
             name: 'Budget Tracker',
+            description:'A PWA for tracking your finances no matter where you are',
             link: 'https://arcane-forest-95788.herokuapp.com/',
             gitHub: 'https://github.com/Mark-Miller78/Budget-Tracker-PWA',
-            description: 'PWA, Service Worker, Heroku'
+            tech: 'PWA, Service Worker, Heroku'
         },
         {
             name: 'Note Taker',
+            description:'An app for any ideas you want to jot down',
             link: 'https://boiling-everglades-66556.herokuapp.com/',
             gitHub: 'https://github.com/Mark-Miller78/Note-Taker',
-            description: 'Express.js, Node.js'
+            tech: 'Express.js, Node.js'
         },
         {
             name: 'Work Day Scheduler',
+            description: 'An app for keeping track of your hectic work day',
             link: 'https://mark-miller78.github.io/Work-Day-Scheduler/',
             gitHub: 'https://github.com/Mark-Miller78/Work-Day-Scheduler',
-            description: 'JQuery, Moment.js, Bootstrap'
+            tech: 'JQuery, Moment.js, Bootstrap'
         },
         {
             name: 'Social Network API',
+            description: 'Backend setup for a social media app',
             link: 'https://github.com/Mark-Miller78/Social-Network-API',
             gitHub: 'https://github.com/Mark-Miller78/Social-Network-API',
-            description: 'MongoDB, Mongooose, Express.js'
+            tech: 'MongoDB, Mongooose, Express.js'
         }
     ];
 
@@ -66,14 +72,18 @@ function Projects(){
                                     src={require(`../../assets/images/Projects/${project.name}.png`)} 
                                     alt="project screenshot"
                                 />
-                            <div className="items row">
-                                    <a href={project.link} target="_blank" rel="noreferrer" className="col-8 col-lg-9 col-md-9 col-sm-8">
-                                        <h3 className="projectLinks">{project.name}</h3>
+                            <div className="card-body">    
+                                <h2 className="card-title">{project.name}</h2>
+                                <p className="description">{project.description}</p>
+                                <p className="description col-12">{project.tech}</p>
+                                <div className="card-body">
+                                    <a  href={project.link} target="_blank" rel="noreferrer noopener">
+                                        View app
                                     </a>
-                                    <a href={project.gitHub} target="_blank" rel="noreferrer" className="col-4 col-lg-3 col-md-3 col-sm-4">
-                                        <img className="logo" alt="Github logo" src={gitHub}/>
+                                    <a  href={project.gitHub} target="_blank" rel="noreferrer noopener">
+                                        View repo
                                     </a>
-                                    <p className="description col-12">{project.description}</p>
+                                </div>
                             </div>
                             </div>
                         </div>)
