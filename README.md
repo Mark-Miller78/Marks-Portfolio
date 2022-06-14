@@ -9,10 +9,11 @@ This is my personal porfolio website
     -BootStrap
     -React.js
     -Email.js
+    -Masonry
 
 ## Link
 [Click to be taken to my portfolio](http://Mark-Miller78.github.io/Marks-Portfolio)
-![Portfolio's About Me section](https://user-images.githubusercontent.com/91908196/160300597-88c85653-281e-480a-a707-5853493c348d.png)
+![mark-miller78 github io_Marks-Portfolio_ (1)](https://user-images.githubusercontent.com/91908196/173470286-58e1e870-00d4-4fc5-aa01-8517e7235bb0.png)
 
 ## Contribution
 Made by Mark Miller
