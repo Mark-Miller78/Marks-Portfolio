@@ -107,6 +107,11 @@ header a {
 .card-body a{
   padding: 5px;
 }
+
+.card-title{
+  font-family: fantasy;
+}
+
 .my-masonry-grid {
   display: -webkit-box; /* Not needed if autoprefixing */
   display: -ms-flexbox; /* Not needed if autoprefixing */
@@ -122,6 +127,7 @@ header a {
 /* Style your items */
 .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
   background: var(--header-background);
+  color: var(--header-txt);
   margin-bottom: 30px;
   text-align: center;
 }
@@ -295,6 +301,10 @@ footer{
   #aboutimg{
     width: 15em;
   }
+
+  .links{
+    font-size: .75rem;
+  }
 }
 
 @media screen and (max-width: 472px){
@@ -311,6 +321,10 @@ footer{
       font-size: 25px;
       align-self: center;
   }
+  .projectImg{
+    height: 50vw;
+  }
+
   footer{
       font-size: 15px;
   }
@@ -319,9 +333,6 @@ footer{
 @media screen and (max-width: 487px) {
   .projectLinks{
     font-size: .75rem;
-  }
-  .description{
-    font-size: .5rem;
   }
   header a{
     font-size: .75rem;

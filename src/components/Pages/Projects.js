@@ -55,8 +55,8 @@ function Projects(){
 
     const breakpointColumnsObj = {
         default: 3,
-        768: 2,
-        500: 1,
+        942: 2,
+        472: 1,
     }
 
     return (
@@ -86,8 +86,8 @@ function Projects(){
                             <div className={`card-body ${isHovering === index ? "d-inline" : "d-none"}`}>    
                                 <h2 className="card-title">{project.name}</h2>
                                 <p className="description">{project.description}</p>
-                                <p className="description col-12">{project.tech}</p>
-                                <div className="card-body">
+                                <p className="description">{project.tech}</p>
+                                <div className="card-body links">
                                     <a  href={project.link} target="_blank" rel="noreferrer noopener">
                                         View app
                                     </a>
