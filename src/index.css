@@ -12,9 +12,12 @@
   box-sizing: border-box;
 }
 
+
 body{
   font-family: Helvrtica, Arial, sans-serif;
 }
+
+
 
 header{
   background-color: var(--header-background);
@@ -50,7 +53,7 @@ header nav ul li{
   padding: 10px 20px;
 }
 
-header a {
+header span {
   text-decoration: none;
   color: var(--header-txt);
   font-weight: bold;
@@ -73,6 +76,7 @@ header a {
   padding: 20px 50px 40px 50px;
   border: 10px solid var(--main-txt);
   background-color: var(--main-background);
+  min-height: calc(100vh - 161.1px);
 }
 
 .about-me{
@@ -83,7 +87,7 @@ header a {
   text-align: center;
   line-height: 1.5;
   font-size: 40px;
-  margin: 5px auto 20px auto;
+  margin: 5px auto 50px auto;
   border-bottom: 5px solid var(--header-txt);
   width: 50%;
   justify-self: center;
@@ -135,13 +139,13 @@ header a {
 
 .projectImg{
   border-radius: .25rem;
-  height: 22vw;
+  height: 350px;
   width: 100%;
 }
 
 .hover{
   border-radius: .25rem;
-  height: 22vw;
+  height: 350px;
   width: 100%;
 }
 
@@ -177,7 +181,8 @@ header a {
   font-size: 13px;
   background-color: var(--main-txt);
   color: var(--header-txt);
-  border-radius:10px
+  border-radius:10px;
+  font-size: 20px;
 }
 
 .contact-form button{
@@ -235,6 +240,13 @@ footer{
 
 .footer-icons{
   text-align: center;
+}
+
+@media screen and (min-width :2560px){
+  .about-container{
+    max-width: 60%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 1067px) {
