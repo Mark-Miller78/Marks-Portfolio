@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Marks-Portfolio/static/css/main.ca0a6492.css",
-    "main.js": "/Marks-Portfolio/static/js/main.48edb040.js",
+    "main.css": "/Marks-Portfolio/static/css/main.8fa27c0c.css",
+    "main.js": "/Marks-Portfolio/static/js/main.df490693.js",
     "static/js/787.128fc6e9.chunk.js": "/Marks-Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/Parks And Brews.png": "/Marks-Portfolio/static/media/Parks And Brews.768c4cfc69ac4c6b9683.png",
     "static/media/Game Lounge.png": "/Marks-Portfolio/static/media/Game Lounge.d61b5539ba8e839ef46b.png",
@@ -12,12 +12,12 @@
     "static/media/Technical-Resume.doc": "/Marks-Portfolio/static/media/Technical-Resume.74e24fee14e56810ccd5.doc",
     "static/media/Social Network API.png": "/Marks-Portfolio/static/media/Social Network API.e232b4ee942731aab7f7.png",
     "index.html": "/Marks-Portfolio/index.html",
-    "main.ca0a6492.css.map": "/Marks-Portfolio/static/css/main.ca0a6492.css.map",
-    "main.48edb040.js.map": "/Marks-Portfolio/static/js/main.48edb040.js.map",
+    "main.8fa27c0c.css.map": "/Marks-Portfolio/static/css/main.8fa27c0c.css.map",
+    "main.df490693.js.map": "/Marks-Portfolio/static/js/main.df490693.js.map",
     "787.128fc6e9.chunk.js.map": "/Marks-Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca0a6492.css",
-    "static/js/main.48edb040.js"
+    "static/css/main.8fa27c0c.css",
+    "static/js/main.df490693.js"
   ]
 }
