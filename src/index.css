@@ -77,7 +77,7 @@ header span {
   padding: 20px 50px 40px 50px;
   border: 10px solid var(--main-txt);
   background-color: var(--main-background);
-  min-height: calc(100vh - 161.1px);
+  min-height: calc(100vh - 181.1px);
 }
 
 .about-me{
@@ -112,6 +112,7 @@ header span {
 .card-body a{
   padding: 5px;
 }
+
 
 .card-title{
   font-family: fantasy;
@@ -241,6 +242,7 @@ footer{
 
 .footer-icons{
   text-align: center;
+  padding: 10px
 }
 
 @media screen and (min-width :2560px){

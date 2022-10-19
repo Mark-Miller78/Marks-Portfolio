@@ -87,7 +87,7 @@ function Projects(){
                                 <h2 className="card-title">{project.name}</h2>
                                 <p className="description">{project.description}</p>
                                 <p className="description">{project.tech}</p>
-                                <div className="card-body links">
+                                <div className="links">
                                     <a  href={project.link} target="_blank" rel="noreferrer noopener">
                                         View app
                                     </a>
