@@ -80,7 +80,7 @@ function Projects(){
                             >
                                 <img  
                                     className={`projectImg ${isHovering === index ? "hover" : ""}`} 
-                                    src={require(`../../assets/images/Projects/${project.name}.png`)} 
+                                    src={require(`../assets/images/Projects/${project.name}.png`)} 
                                     alt="project screenshot"
                                 />
                             <div className={`card-body ${isHovering === index ? "d-inline" : "d-none"}`}>    

@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import Footer from "./footer";
 import Header from "./header";
-import About from "./Pages/About";
-import ContactForm from "./Pages/Contact";
-import Resume from "./Pages/Resume";
-import Projects from "./Pages/Projects";
+import About from "../Pages/About";
+import ContactForm from "../Pages/Contact";
+import Resume from "../Pages/Resume";
+import Projects from "../Pages/Projects";
 
 
 function PortfolioContainer() {
