@@ -83,19 +83,19 @@ function Projects(){
                                     src={require(`../assets/images/Projects/${project.name}.png`)} 
                                     alt="project screenshot"
                                 />
-                            <div className={`card-body ${isHovering === index ? "d-inline" : "d-none"}`}>    
-                                <h2 className="card-title">{project.name}</h2>
-                                <p className="description">{project.description}</p>
-                                <p className="description">{project.tech}</p>
-                                <div className="links">
-                                    <a  href={project.link} target="_blank" rel="noreferrer noopener">
-                                        View app
-                                    </a>
-                                    <a  href={project.gitHub} target="_blank" rel="noreferrer noopener">
-                                        View repo
-                                    </a>
+                                <div className={`card-body ${isHovering === index ? "" : "visually-hidden"}`}>    
+                                    <h2 className="card-title">{project.name}</h2>
+                                    <p className="description">{project.description}</p>
+                                    <p className="description">{project.tech}</p>
+                                    <div className="links">
+                                        <a  href={project.link} target="_blank" rel="noreferrer noopener">
+                                            View app
+                                        </a>
+                                        <a  href={project.gitHub} target="_blank" rel="noreferrer noopener">
+                                            View repo
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         )
                     })}
