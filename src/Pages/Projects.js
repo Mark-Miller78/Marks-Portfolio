@@ -83,17 +83,35 @@ function Projects(){
                                     src={require(`../assets/images/Projects/${project.name}.png`)} 
                                     alt="project screenshot"
                                 />
-                                <div className={`card-body ${isHovering === index ? "" : "visually-hidden"}`}>    
-                                    <h2 className="card-title">{project.name}</h2>
-                                    <p className="description">{project.description}</p>
-                                    <p className="description">{project.tech}</p>
-                                    <div className="links">
-                                        <a  href={project.link} target="_blank" rel="noreferrer noopener">
-                                            View app
-                                        </a>
-                                        <a  href={project.gitHub} target="_blank" rel="noreferrer noopener">
-                                            View repo
-                                        </a>
+                                <div className='accordion accordion-flush' id={'project'+index}>    
+                                    <div className="accordion-item">
+                                        <h2 className="accordion-header" id={'heading'+index}>
+                                            <button className="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle='collapse'
+                                                    data-bs-target={'#accordionItem'+index}
+                                                    aria-expanded='false'
+                                                    aria-controls={project.name}>
+                                                        {project.name}
+                                            </button>
+                                        </h2>
+                                        <div className="accordion-collapse collapse"
+                                                id={'accordionItem'+index}
+                                                aria-labelledby={'heading'+index}
+                                                data-bs-parent={'#project'+index}>
+                                            <div className="accordion-body">
+                                                <p className="description">{project.description}</p>
+                                                <p className="description">{project.tech}</p>
+                                                <div className="links">
+                                                    <a  href={project.link} target="_blank" rel="noreferrer noopener">
+                                                        View app
+                                                    </a>
+                                                    <a  href={project.gitHub} target="_blank" rel="noreferrer noopener">
+                                                        View repo
+                                                    </a>
+                                            </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
