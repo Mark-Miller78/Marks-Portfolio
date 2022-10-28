@@ -63,7 +63,7 @@ header span {
   cursor: pointer;
 }
 
-.active-tab, header a:hover{
+.active-tab, header span:hover{
   background-color: var(--header-txt);
   color: var(--header-background);
   border-radius: .75em;
@@ -114,13 +114,25 @@ header span {
   font-weight: 475;
 }
 
-.card-body a{
-  padding: 5px;
+.links a{
+  padding: 10px;
 }
 
 
-.card-title{
-  font-family: fantasy;
+.accordion-button{
+  background-color: var(--header-background) !important;
+  font-weight: 700;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: var(--main-background) !important;
+  color: var(--main-txt);
+}
+
+.accordion-body{
+  background-color: var(--header-background);
+  color: var(--header-txt);
+  font-weight: 600;
 }
 
 .my-masonry-grid {
@@ -150,11 +162,6 @@ header span {
   width: 100%;
 }
 
-.hover{
-  border-radius: .25rem;
-  height: 350px;
-  width: 100%;
-}
 
 .cardHover{
   box-shadow: 10px 5px rgba(0,0,0,0.70);
@@ -261,7 +268,7 @@ footer{
   header{
     padding: 10px;
   }
-  header a{
+  header span{
     font-size: 1.3rem;
   }
   .projectLinks{
@@ -274,8 +281,14 @@ footer{
   .header-info{
     font-size: 1.2rem;
   }
-  header a{
+  header{
+    flex-direction: column;
+  }
+  header span{
     font-size: 1rem;
+  }
+  header nav{
+    align-self: center;
   }
   #aboutimg{
     width: 20em;
@@ -290,18 +303,12 @@ footer{
   .section-title, .contact-info{
       width: 80%;
   }
-  header{
-      flex-direction: column;
-  }
   #aboutimg{
     width: 18em;
     margin: 0.5em 1.5em .30em 0em;
   }
   .aboutText{
     font-size: 1.25em;
-  }
-  header nav{
-      align-self: center;
   }
   .projectLinks{
     font-size: 1rem;
@@ -312,7 +319,7 @@ footer{
 }
 
 @media screen and (max-width:653px){
-  header a {
+  header span {
     font-size: 1rem;
   }
 }
@@ -321,9 +328,8 @@ footer{
   #aboutimg{
     width: 15em;
   }
-
-  .links{
-    font-size: .75rem;
+  header span{
+    font-size: 16px;
   }
 }
 
@@ -354,7 +360,7 @@ footer{
   .projectLinks{
     font-size: .75rem;
   }
-  header a{
+  header span{
     font-size: .75rem;
   }
 }
@@ -364,8 +370,8 @@ footer{
       font-size: 25px;
       width:90%;
   }
-  header a {
-    font-size: .60rem;
+  header span {
+    font-size: 12px;
   }
   
 }

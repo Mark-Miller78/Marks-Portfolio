@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Masonry from "react-masonry-css";
+import 'bootstrap/js/dist/collapse'
 
 
 
@@ -49,14 +50,14 @@ function Projects(){
             description: 'Backend setup for a social media app',
             link: 'https://github.com/Mark-Miller78/Social-Network-API',
             gitHub: 'https://github.com/Mark-Miller78/Social-Network-API',
-            tech: 'MongoDB, Mongooose, Express.js'
+            tech: 'MongoDB, Mongoose, Express.js'
         }
     ];
 
     const breakpointColumnsObj = {
         default: 3,
-        942: 2,
-        472: 1,
+        1024: 2,
+        652: 1,
     }
 
     return (
@@ -79,13 +80,13 @@ function Projects(){
                                 key={index}
                             >
                                 <img  
-                                    className={`projectImg ${isHovering === index ? "hover" : ""}`} 
+                                    className='projectImg'
                                     src={require(`../assets/images/Projects/${project.name}.png`)} 
                                     alt="project screenshot"
                                 />
                                 <div className='accordion accordion-flush' id={'project'+index}>    
                                     <div className="accordion-item">
-                                        <h2 className="accordion-header" id={'heading'+index}>
+                                        <h2 className="accordion-header projectHeader" id={'heading'+index}>
                                             <button className="accordion-button collapsed"
                                                     type="button"
                                                     data-bs-toggle='collapse'
