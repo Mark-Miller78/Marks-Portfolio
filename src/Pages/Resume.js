@@ -20,7 +20,9 @@ function Resume() {
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Javascript</li>
-                            <li>React</li>
+                            <li>React.Js</li>
+                            <li>React Hooks</li>
+                            <li>React Context</li>
                             <li>Bootstrap</li>
                             <li>Foundation</li>
                             <li>JQuery</li>
@@ -31,11 +33,12 @@ function Resume() {
                         <h2 className="proficiencies">Back-End Proficiences</h2>
                         <ul className="proficiencies-list">
                             <li>APIs</li>
-                            <li>Node</li>
+                            <li>Node.Js</li>
                             <li>MySQL, Sequelize</li>
                             <li>MongoDB, Mongoose</li>
                             <li>Pogressive Web Apps</li>
-                            <li>Express</li>
+                            <li>Express.Js</li>
+                            <li>GraphQL</li>
                         </ul>
                     </div>
                 </div>

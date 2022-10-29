@@ -3,9 +3,6 @@ import GitHubCalendar from "react-github-calendar";
 
 function GithubStats () {
 
-    const theme ={
-        level1: '#7C8981'
-    };
 
     return(
         <div>

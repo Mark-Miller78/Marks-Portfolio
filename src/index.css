@@ -116,6 +116,7 @@ header span {
 
 .links a{
   padding: 10px;
+  color: var(--main-txt);
 }
 
 
@@ -126,7 +127,8 @@ header span {
 
 .accordion-button:not(.collapsed){
   background-color: var(--main-background) !important;
-  color: var(--main-txt);
+  color: var(--main-txt) !important;
+  box-shadow: none !important;
 }
 
 .accordion-body{
