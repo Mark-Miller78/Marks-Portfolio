@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/Marks-Portfolio/static/css/main.8b57386a.css",
-    "main.js": "/Marks-Portfolio/static/js/main.596a23c4.js",
+    "main.js": "/Marks-Portfolio/static/js/main.54a4af23.js",
     "static/js/787.128fc6e9.chunk.js": "/Marks-Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/Game Lounge.png": "/Marks-Portfolio/static/media/Game Lounge.de685640d5987930fc34.png",
     "static/media/Parks And Brews.png": "/Marks-Portfolio/static/media/Parks And Brews.04e8faef3d2218bb438b.png",
     "static/media/Work Day Scheduler.png": "/Marks-Portfolio/static/media/Work Day Scheduler.b3a0122426720d79b423.png",
     "static/media/Budget Tracker.png": "/Marks-Portfolio/static/media/Budget Tracker.b95e5295c035761542fb.png",
     "static/media/Note Taker.png": "/Marks-Portfolio/static/media/Note Taker.251d7663e57d105a1722.png",
+    "static/media/Resume.doc": "/Marks-Portfolio/static/media/Resume.665e32d5726e4fd53ef3.doc",
     "static/media/aboutimg.jpg": "/Marks-Portfolio/static/media/aboutimg.e0c75353d9f84da55786.jpg",
-    "static/media/Technical-Resume.doc": "/Marks-Portfolio/static/media/Technical-Resume.74e24fee14e56810ccd5.doc",
     "static/media/Social Network API.png": "/Marks-Portfolio/static/media/Social Network API.e232b4ee942731aab7f7.png",
     "index.html": "/Marks-Portfolio/index.html",
     "main.8b57386a.css.map": "/Marks-Portfolio/static/css/main.8b57386a.css.map",
-    "main.596a23c4.js.map": "/Marks-Portfolio/static/js/main.596a23c4.js.map",
+    "main.54a4af23.js.map": "/Marks-Portfolio/static/js/main.54a4af23.js.map",
     "787.128fc6e9.chunk.js.map": "/Marks-Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8b57386a.css",
-    "static/js/main.596a23c4.js"
+    "static/js/main.54a4af23.js"
   ]
 }
